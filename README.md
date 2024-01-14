@@ -1,9 +1,26 @@
-## React-hooks Project Calculator
+# React-hooks Project Calculator
 https://eazeldon.github.io/react-calculator/
 
+## User story
+In 2022 I was an intern at Plexian. One of my tasks was to create a calculator for iPad and desktop usage. The purpose of this was to learn and understand the functionalities of how react-hooks work. 
+
+I had fun doing this project, and realized it’s not so hard to learn new things. I received great feedback about this project because I understood  the code and how to design a calculator.
 
 
-# Getting Started with Create React App
+## Features
+Calculator have the following feature sets:  addition, subtraction, division, multiplication, undo, reset, percent, +/-, and clock.
+
+## Testing
+It was tested live on a MacBook Pro 15” screen, with MacOS ver. 10.14.6 and Google Chrome and Safari browsers, iPad mini4, with iOS ver., iPad Air 5th generation with iPadOS 17.2 using the Safari browser,
+
+## Acknowledgement
+The code is from a learning path open source for student and beginners
+
+Design and creation by Eazel Don Frantzich for Plexian
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
