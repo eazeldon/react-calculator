@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
 }
+body {
+   background-color: rgb(149, 199, 139);
+   display: grid;
+   place-content: center;
+   font-family: "Roboto", sans-serif;
+   height: 100vh;
+   font-size: 2rem;
+ }
+/*************  Calculator Body */
+ .container {
+   height: 120vh;
+   width: 50vh;
+   background-color: rgb(59, 48, 48);
+   border-radius: 1rem;
+   padding: 1rem;
+   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+ }
+ .inside-cal {
+   display: grid;
+   height: 300px;
+   width: 100%;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(6, 1fr);
+   gap: 4px;
+   padding: 8px;
+   margin-left: 3px;
+   margin-right: 3px;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .screen {
+   grid-column: 1 / -1;
+   color: white;
+   text-align: right;
+   padding: 0.5rem;
+   /*font-size: 2rem;*/
+   font-size: 80%;
+   overflow: hidden;
+   height: 200px;
+   background-color: black;
+    padding: 10px;
+    margin: 10px;
+ }
+ .btn {
+   display: grid;
+   place-content: center;
+   background-color: rgb(68, 85, 94);
+   border-radius: 45%;
+   border: 8px double green;
+   color: white;
+   cursor: pointer;
+   font-weight: bold;
+   height: 70px;
+ 
+   width: 80px;
+ }
+ .btn:hover {
+   background-color: gray;
+ }
+/*********** button AC % +/- ****/
+ .light-gray {
+   background-color: rgb(159, 195, 236);
+   color: black;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .light-gray:hover {
+   background-color: rgb(183, 226, 133);
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ .orange {
+  /* background-color: rgb(188, 190, 46);*/
+  background-color: rgb(126 122 43);
+ }
+ 
+ .orange:hover {
+   background-color: white;
+   color: orange;
+ }
+/*.zero {
+   grid-column: 1 / span 2;
+   border-radius: 25px;
+   place-content: unset;
+   align-items: center;
+   padding-left: 2rem;
+ }*/
+
+ /*Time*/
+.clock {
   color: white;
+  margin-left: 15px;
+  margin-top: 6px;
+  /*border: 3px solid green;
+  border-radius: 20px;
+  height: 25px;*/
+  text-align: left;
+  padding: 6px;
+ 
+  
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+   margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*btn fix % 8 5 2 .*/
+.fix {
+   
+   height: 70px;
+   width: 85px;
+   margin-left:13px;
+  
+
 }
+
+
+
+@media screen and (min-width: 768px) {
+   body {
+     height: 100vh;
+     overflow: hidden;
+   }
+ 
+   .container {
+     grid-template-columns: repeat(2, 1fr);
+     padding: 20px;
+     height: 800px;
+    /* width: 400px;*/
+    
+   
+   }
+ }
+ 
+ @media screen and (min-width: 525px) {
+   body {
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+      height: 800px;
+     /* width: 400px;*/
+     
+    
+    }
+  }
+  @media screen and (min-width: 400px) {
+   body {
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+      height: 800px;
+      width: 420px;
+     
+    
+    }
+
+    .inside-cal {
+      display: grid;
+      height: 200px;
+
+    }
+    
+  }
+  
+
+ 
+ 
+ 
+ 
+ 
