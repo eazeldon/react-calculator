@@ -157,7 +157,8 @@ body {
   }
   @media screen and (min-width: 400px) {
    body {
-      height: 100vh;
+      margin-top: 35%;
+      height: 60vh;
       overflow: hidden;
     }
   
